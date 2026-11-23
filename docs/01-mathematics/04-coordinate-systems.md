@@ -12,13 +12,13 @@
 列向量约定：
 
 $$
-\\mathbf p_{clip}=P V M \\mathbf p_{local}
+\mathbf p_{clip}=P V M \mathbf p_{local}
 $$
 
 透视除法：
 
 $$
-\\mathbf p_{ndc}= (x_c/w_c, y_c/w_c, z_c/w_c)^T
+\mathbf p_{ndc}= (x_c/w_c, y_c/w_c, z_c/w_c)^T
 $$
 
 之后通过 viewport 映射到 framebuffer 像素区域。
