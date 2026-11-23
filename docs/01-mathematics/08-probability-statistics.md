@@ -2,16 +2,16 @@
 
 ## 随机变量与期望
 $$
-\\mathbb E[X]=\\int x p(x)\\,dx
+\mathbb E[X]=\int x p(x)\,dx
 $$
 
 渲染中的像素颜色可视为随机路径贡献的期望估计。
 
 ## Monte Carlo 估计
 $$
-\\int f(x)\\,dx
-=\\mathbb E_p\\left[\\frac{f(X)}{p(X)}\\right]
-\\approx\\frac1N\\sum_{i=1}^{N}\\frac{f(X_i)}{p(X_i)}
+\int f(x)\,dx
+=\mathbb E_p\left[\frac{f(X)}{p(X)}\right]
+\approx\frac1N\sum_{i=1}^{N}\frac{f(X_i)}{p(X_i)}
 $$
 
 $X_i$ 按概率密度 $p$ 采样。采样分布必须覆盖被积函数的有效区域。
