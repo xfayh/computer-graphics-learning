@@ -9,7 +9,7 @@ int main() {
     const Vec3 normal = edge1.cross(edge2).normalized();
 
     std::cout << std::fixed << std::setprecision(3);
-    std::cout << "edge1 dot edge2 = " << edge1.dot(edge2) << '\\n';
-    std::cout << "normal = (" << normal.x << ", " << normal.y << ", " << normal.z << ")\\n";
+    std::cout << "edge1 dot edge2 = " << edge1.dot(edge2) << '\n';
+    std::cout << "normal = (" << normal.x << ", " << normal.y << ", " << normal.z << ")\n";
     return 0;
 }
