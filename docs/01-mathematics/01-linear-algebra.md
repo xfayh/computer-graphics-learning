@@ -6,7 +6,7 @@
 采用列向量约定时，顶点变换链为：
 
 $$
-\\mathbf p_{clip}=P V M \\mathbf p_{local}
+\mathbf p_{clip}=P V M \mathbf p_{local}
 $$
 
 矩阵从右向左作用：先模型变换，再视图变换，最后投影变换。
@@ -22,16 +22,16 @@ $$
 映射 $T$ 是线性的，当且仅当：
 
 $$
-T(a\\mathbf u+b\\mathbf v)=aT(\\mathbf u)+bT(\\mathbf v)
+T(a\mathbf u+b\mathbf v)=aT(\mathbf u)+bT(\mathbf v)
 $$
 
-旋转、缩放、反射、剪切都是线性变换。平移不是线性变换，因为一般有 $T(\\mathbf 0)\\ne\\mathbf 0$；后续用齐次坐标把仿射变换统一表示为矩阵乘法。
+旋转、缩放、反射、剪切都是线性变换。平移不是线性变换，因为一般有 $T(\mathbf 0)\ne\mathbf 0$；后续用齐次坐标把仿射变换统一表示为矩阵乘法。
 
 ## 4. 基底与坐标
-同一个几何向量可在不同基底下拥有不同坐标。坐标变化不等于几何对象本身改变。若基底向量组成矩阵 $B=[\\mathbf b_1\\ \mathbf b_2\\ \mathbf b_3]$，则：
+同一个几何向量可在不同基底下拥有不同坐标。坐标变化不等于几何对象本身改变。若基底向量组成矩阵 $B=[\mathbf b_1\ \mathbf b_2\ \mathbf b_3]$，则：
 
 $$
-\\mathbf v=B[\\mathbf v]_B
+\mathbf v=B[\mathbf v]_B
 $$
 
 ## 5. 图形学中的重要区分
