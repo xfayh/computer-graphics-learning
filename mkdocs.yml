@@ -1,0 +1,43 @@
+site_name: Computer Graphics Learning
+site_description: Expert-level computer graphics, GPU programming and rendering engineering
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - content.code.annotate
+nav:
+  - Home: index.md
+  - 00 Preface: 00-preface/index.md
+  - 01 Mathematics:
+      - Overview: 01-mathematics/index.md
+      - Linear algebra: 01-mathematics/01-linear-algebra.md
+      - Vectors: 01-mathematics/02-vectors.md
+      - Matrices: 01-mathematics/03-matrices.md
+      - Coordinate systems: 01-mathematics/04-coordinate-systems.md
+      - Transformations: 01-mathematics/05-transformations.md
+      - Trigonometry: 01-mathematics/06-trigonometry.md
+      - Calculus: 01-mathematics/07-calculus.md
+      - Probability: 01-mathematics/08-probability-statistics.md
+      - Numerical computation: 01-mathematics/09-numerical-computation.md
+  - 02 Graphics fundamentals: 02-computer-graphics-fundamentals/index.md
+  - 03 Geometry: 03-3d-geometry-and-transformations/index.md
+  - 04 Rasterization: 04-rasterization/index.md
+  - 05 Lighting and materials: 05-lighting-materials-and-textures/index.md
+  - 06 GPU and shaders: 06-gpu-and-shader-programming/index.md
+  - 07 OpenGL: 07-opengl/index.md
+  - 08 DirectX: 08-directx/index.md
+  - 09 Vulkan, Metal and WebGPU: 09-vulkan-and-modern-apis/index.md
+  - 10 Advanced rendering: 10-advanced-real-time-rendering/index.md
+  - 11 Ray tracing: 11-ray-tracing-and-path-tracing/index.md
+  - 12 Renderer architecture: 12-rendering-engine-architecture/index.md
+markdown_extensions:
+  - admonition
+  - tables
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js
