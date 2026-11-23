@@ -4,59 +4,59 @@
 三维向量写作：
 
 $$
-\\mathbf v=(x,y,z)^T
+\mathbf v=(x,y,z)^T
 $$
 
 其欧氏长度为：
 
 $$
-\\|\\mathbf v\\|=\\sqrt{x^2+y^2+z^2}
+\|\mathbf v\|=\sqrt{x^2+y^2+z^2}
 $$
 
 单位化：
 
 $$
-\\hat{\\mathbf v}=\\frac{\\mathbf v}{\\|\\mathbf v\\|}
+\hat{\mathbf v}=\frac{\mathbf v}{\|\mathbf v\|}
 $$
 
 零向量不能单位化；工程代码必须显式处理。
 
 ## 点积
 $$
-\\mathbf a\\cdot\\mathbf b= a_xb_x+a_yb_y+a_zb_z
-=\\|\\mathbf a\\|\\|\\mathbf b\\|\\cos\\theta
+\mathbf a\cdot\mathbf b= a_xb_x+a_yb_y+a_zb_z
+=\|\mathbf a\|\|\mathbf b\|\cos\theta
 $$
 
 单位向量点积得到夹角余弦。Lambert 漫反射常用：
 
 $$
-I_d=k_d I_L\\max(0,\\mathbf n\\cdot\\mathbf l)
+I_d=k_d I_L\max(0,\mathbf n\cdot\mathbf l)
 $$
 
 法线与光照方向必须采用一致的方向定义且已归一化。
 
 ## 叉积
 $$
-\\mathbf a\\times\\mathbf b=
-\\begin{bmatrix}
-a_yb_z-a_zb_y\\
-a_zb_x-a_xb_z\\
+\mathbf a\times\mathbf b=
+\begin{bmatrix}
+a_yb_z-a_zb_y\
+a_zb_x-a_xb_z\
 a_xb_y-a_yb_x
-\\end{bmatrix}
+\end{bmatrix}
 $$
 
-叉积垂直于两个输入向量，长度等于平行四边形面积。三角形法线可由 $(B-A)\\times(C-A)$ 得到；交换顺序会翻转法线。
+叉积垂直于两个输入向量，长度等于平行四边形面积。三角形法线可由 $(B-A)\times(C-A)$ 得到；交换顺序会翻转法线。
 
 ## 投影与反射
 $$
-\\operatorname{proj}_{\\mathbf b}\\mathbf a=
-\\frac{\\mathbf a\\cdot\\mathbf b}{\\mathbf b\\cdot\\mathbf b}\\mathbf b
+\operatorname{proj}_{\mathbf b}\mathbf a=
+\frac{\mathbf a\cdot\mathbf b}{\mathbf b\cdot\mathbf b}\mathbf b
 $$
 
-单位法线 $\\mathbf n$ 下，入射方向 $\\mathbf i$ 的反射方向：
+单位法线 $\mathbf n$ 下，入射方向 $\mathbf i$ 的反射方向：
 
 $$
-\\mathbf r=\\mathbf i-2(\\mathbf i\\cdot\\mathbf n)\\mathbf n
+\mathbf r=\mathbf i-2(\mathbf i\cdot\mathbf n)\mathbf n
 $$
 
 ## 数值注意事项
